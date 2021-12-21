@@ -1,0 +1,8 @@
+[package]
+name = "b64id"
+version = "0.1.0"
+edition = "2021"
+description = "A simple base64 ID generator for your projects"
+
+[dependencies]
+rand = "*"
