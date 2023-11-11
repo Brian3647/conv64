@@ -23,7 +23,7 @@ fn main() {
     println!("{}", y); // A random number between 1 and 2000, encoded in base 64
 
     // Get the maximum value a base 64 number can have with a given number of letters
-    assert_eq!(max_value_for_letters(1), Some(63));
+    assert_eq!(conv64::max_value_for_letters(1), Some(63));
 }
 ```
 
