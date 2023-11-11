@@ -3,7 +3,6 @@ name = "conv64"
 version = "0.1.0"
 edition = "2021"
 description = "A simple base 10 to base 64 converter"
-categories = ["utility"]
 keywords = ["base64", "numbers"]
 license = "MIT"
 repository = "https://github.com/Brian3647/conv64"
