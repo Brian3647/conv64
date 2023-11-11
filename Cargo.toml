@@ -1,8 +1,18 @@
 [package]
-name = "b64id"
+name = "conv64"
 version = "0.1.0"
 edition = "2021"
-description = "A simple base64 ID generator for your projects"
+description = "A simple base 10 to base 64 converter"
+categories = ["utility"]
+keywords = ["base64", "numbers"]
+license = "MIT"
+repository = "https://github.com/Brian3647/conv64"
+readme = "README.md"
+include = ["src/**.rs", "Cargo.toml", "README.md", "LICENSE"]
+authors = ["Brian3647 <victoris3647@gmail.com>"]
 
 [dependencies]
-rand = "*"
+rand = { optional = true, version = "0.8.5" }
+
+[features]
+default = ["rand"]
