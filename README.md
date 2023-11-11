@@ -16,7 +16,14 @@ conv64 = "*"
 // main.rs
 fn main() {
     let x = conv64::encode(1234567890);
-    println!("{}", x); // 1LY7VK
+    println!("{}", x); // 19bWBI
+
+    // With the `rand` feature enabled:
+    let y = conv64::generate(1..2000);
+    println!("{}", y); // A random number between 1 and 2000, encoded in base 64
+
+    // Get the maximum value a base 64 number can have with a given number of letters
+    assert_eq!(max_value_for_letters(1), Some(63));
 }
 ```
 
